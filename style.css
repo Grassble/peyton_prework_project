@@ -1,4 +1,61 @@
+head {
+  width: 15%;
+  height: 15%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-left: 300px;
+}
 body {
     background: whitesmoke;
     text-align: center;
   }
+p {
+  background-color: whitesmoke;
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+image {
+  height: auto;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+table {
+  width: 20%;
+  align-items: center;  
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 10%;
+}
+<style>
+    /*
+      Rollover Image
+     */
+    .figure {
+        position: relative;
+        width: 50px; /* can be omitted for a regular non-lazy image */
+        max-width: 30%;
+        height: 15%;
+    }
+    .figure img.image-hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity .2s;
+      padding-left: 870px;
+      padding-top: 8px;
+      
+    }
+    .figure:hover img.image-hover {
+      opacity: 1;
+    }
+</style>
+
+
